@@ -33,9 +33,9 @@ html {
   }
 
   h1 {
-    font-size: 8em;
+    font-size: 6em;
     font-weight: 400;
-
+    color: #1099ff;
   }
 
   h2 {
@@ -85,7 +85,6 @@ html {
 
   .footer-container {
     border-top: 4px solid #1099ff;
-
   }
 
   .nav-container li {
@@ -100,7 +99,41 @@ html {
     flex-grow: 2;
   }
 
-/* --- 4. SECTION STYLES */
+/* --- 4. GRID */
+
+.grid-container {
+  padding: 75px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* auto auto auto was making ficaption random sizes */
+  gap: 50px 25px; /* row then column gap */
+}
+
+.grid-item {
+  border: solid 1px #1099ff;
+}
+
+figcaption {
+  border-top: solid 1px #1099ff;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+}
+
+figcaption p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.grid-image {
+  width: 100%;
+}
+
+.plus-icon {
+height: 2em;
+float: right;
+}
 
   
 
