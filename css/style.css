@@ -101,32 +101,59 @@ html {
 
 /* --- 4. GRID */
 
-.grid-container {
-  padding: 75px 0px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* auto auto auto was making ficaption random sizes */
+.flex-container {
+  padding: 100px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3, 1fr); auto auto auto was making ficaption random sizes */
   gap: 50px 25px; /* row then column gap */
 }
 
-.grid-item {
-  border: solid 1px #1099ff;
+.flex-item {
+  /* border: solid 2px #1099ff; */
+  width: 250px;
+  flex-grow: 1;
+}
+
+.flex-item img {
+  display: block; /* removes the random pixels of white space under img */
+}
+
+.flex-item figure img {
+  border: solid 2px #1099ff;
+
 }
 
 figcaption {
-  border-top: solid 1px #1099ff;
-  padding: 20px;
-  display: grid;
+  /* border-top: solid 2px #1099ff; */
+  display: flex;
   align-items: center;
-  grid-template-columns: 3fr 1fr;
-  width: 100%;
 }
 
-figcaption p {
+figcaption, #captionHide {
+  padding: 20px;
+}
+
+figcaption p, #captionHide {
   font-size: 1em;
   margin: 0;
 }
 
-.grid-image {
+#captionHide {
+  display: none;
+}
+
+.plus-symbol {
+  font-size: 3em;
+  line-height: 0;
+  color: #1099ff;
+}
+
+figcaption div:first-child {
+  flex-grow: 1;
+}
+
+.flex-image {
   width: 100%;
 }
 
