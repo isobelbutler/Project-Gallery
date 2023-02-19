@@ -1,15 +1,15 @@
-
+// Gallery Section Card Data
 
   var gallery = [
     {
       image: 'images/website.png',
       project: 'Main Website',
-      caption: 'Sed ut perspiciatis unde omnis iste natus error.',
+      caption: 'Who I am, why I want to be a developer, and what I\'ve learned so far.',
     },
     {
       image: 'images/hobby.png',
       project: 'Hobby Page',
-      caption: 'Sed ut perspiciatis unde omnis iste natus error.',
+      caption: 'A guide to cycling the Coast to Coast.',
     },
     {
       image: 'images/website.png',
@@ -19,12 +19,12 @@
     {
       image: 'images/gallery.png',
       project: 'Project Gallery',
-      caption: 'Sed ut perspiciatis unde omnis iste natus error.',
+      caption: 'A flex-box layout gallery of the completed application projects.',
     },
     {
       image: 'images/game.png',
       project: 'Feature',
-      caption: 'Sed ut perspiciatis unde omnis iste natus error.',
+      caption: 'A farm harvest game.',
     }
 
   ];
@@ -45,7 +45,7 @@
             </figcaption>
         </figure>
         
-        <div class="captionHide">
+        <div class="captionHide" style="display:none">
           ${card.caption}
         </div>
       </div>`;  

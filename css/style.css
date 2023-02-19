@@ -107,20 +107,27 @@ html {
   flex-wrap: wrap;
   /* grid-template-columns: repeat(3, 1fr); auto auto auto was making ficaption random sizes */
   gap: 50px 25px; /* row then column gap */
+  
+  
 }
 
 .flex-item {
   /* border: solid 2px #1099ff; */
   width: 250px;
   flex-grow: 1;
+  
+  
+
 }
 
 .flex-item img {
   display: block; /* removes the random pixels of white space under img */
+
 }
 
 .flex-item figure img {
   border: solid 2px #1099ff;
+width: 100%;
 
 }
 
@@ -130,7 +137,7 @@ figcaption {
   align-items: center;
 }
 
-figcaption, .captionHide {
+figcaption {
   padding: 20px;
 }
 
@@ -140,7 +147,7 @@ figcaption p, .captionHide {
 }
 
 .captionHide {
-  display: none;
+  padding: 0 20px;
 } 
 
 .plus-symbol {
@@ -159,10 +166,6 @@ figcaption p, .captionHide {
 
 figcaption div:first-child {
   flex-grow: 1;
-}
-
-.flex-image {
-  width: 100%;
 }
 
 .plus-icon {
