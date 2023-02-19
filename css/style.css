@@ -122,7 +122,9 @@ html {
 
 .flex-item img {
   display: block; /* removes the random pixels of white space under img */
-
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 .flex-item figure img {

@@ -4,11 +4,13 @@
     {
       image: 'images/website.png',
       project: 'Main Website',
+      link: 'https://isobelbutler.github.io/Website/',
       caption: 'Who I am, why I want to be a developer, and what I\'ve learned so far.',
     },
     {
       image: 'images/hobby.png',
       project: 'Hobby Page',
+      link: 'https://isobelbutler.github.io/Hobby-Page/',
       caption: 'A guide to cycling the Coast to Coast.',
     },
     {
@@ -25,6 +27,18 @@
       image: 'images/game.png',
       project: 'Feature',
       caption: 'A farm harvest game.',
+    },
+    {
+      image: 'images/oldwebsite.png',
+      project: 'Portfolio',
+      link: 'https://isobelbutler.co.uk/',
+      caption: 'My old WordPress work website.',
+    },
+    {
+      image: 'images/soak.png',
+      project: 'Soak Services',
+      link: 'https://www.soak.services/',
+      caption: 'A onepage website for a small drainage company.',
     }
 
   ];
@@ -40,7 +54,8 @@
         <figure>
             <img src="${card.image}" alt="filler" class="flex-image">
             <figcaption>
-                <div><p>${card.project}</p></div>
+                <div><a href="${card.link}" target="_blank">${card.project}</a></div>
+
                 <button class="plus-symbol">&plus;</button>
             </figcaption>
         </figure>
