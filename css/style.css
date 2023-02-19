@@ -130,23 +130,31 @@ figcaption {
   align-items: center;
 }
 
-figcaption, #captionHide {
+figcaption, .captionHide {
   padding: 20px;
 }
 
-figcaption p, #captionHide {
+figcaption p, .captionHide {
   font-size: 1em;
   margin: 0;
 }
 
-#captionHide {
+.captionHide {
   display: none;
-}
+} 
 
 .plus-symbol {
   font-size: 3em;
   line-height: 0;
   color: #1099ff;
+  cursor:pointer;
+  border: none;
+  padding: 5px 5px; /* to increase clickable area */
+  background-color: inherit;
+
+
+
+
 }
 
 figcaption div:first-child {
@@ -160,6 +168,7 @@ figcaption div:first-child {
 .plus-icon {
 height: 2em;
 float: right;
+
 }
 
   

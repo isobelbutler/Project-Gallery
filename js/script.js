@@ -1,40 +1,35 @@
-function myFunction() {
-    var x = document.getElementById("captionHide");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+
 
   var gallery = [
     {
-      image: 'images/filler.jpg',
+      image: 'images/website.png',
       project: 'Main Website',
       caption: 'Sed ut perspiciatis unde omnis iste natus error.',
     },
     {
-      image: 'images/filler.jpg',
+      image: 'images/hobby.png',
       project: 'Hobby Page',
       caption: 'Sed ut perspiciatis unde omnis iste natus error.',
     },
     {
-      image: 'images/filler.jpg',
+      image: 'images/website.png',
       project: 'Movie Data',
       caption: 'Sed ut perspiciatis unde omnis iste natus error.',
     },
     {
-      image: 'images/filler.jpg',
+      image: 'images/gallery.png',
       project: 'Project Gallery',
       caption: 'Sed ut perspiciatis unde omnis iste natus error.',
     },
     {
-      image: 'images/filler.jpg',
+      image: 'images/game.png',
       project: 'Feature',
       caption: 'Sed ut perspiciatis unde omnis iste natus error.',
     }
 
   ];
+
+// 1. CREATES THE REPEATED CARDS
 
   let html = '';
 
@@ -46,13 +41,30 @@ function myFunction() {
             <img src="${card.image}" alt="filler" class="flex-image">
             <figcaption>
                 <div><p>${card.project}</p></div>
-                <div><p class="plus-symbol" onclick="myFunction()">&plus;</p></div>
+                <button class="plus-symbol">&plus;</button>
             </figcaption>
         </figure>
-        <div id="captionHide">
+        
+        <div class="captionHide">
           ${card.caption}
         </div>
-      </div>`;
+      </div>`;  
 }
 
 document.querySelector('.flex-container').insertAdjacentHTML('beforeend', html); 
+
+// 2. ADDS THE SHOW/HIDE CAPTION
+
+for (let i = 0; i < gallery.length; i++) {
+
+document.querySelectorAll(".plus-symbol")[i].addEventListener("click", function() {
+
+  var x = document.querySelectorAll(".captionHide")[i]; // By using querySelectorAll and captionHide as a class, you can select which index number to affect.
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+});
+}
