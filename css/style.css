@@ -96,6 +96,7 @@ html {
   }
 
   .nav-container li:first-child {
+    /* This aligns first item to left */
     flex-grow: 2;
   }
 
