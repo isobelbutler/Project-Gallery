@@ -14,7 +14,7 @@
       caption: 'A guide to cycling the Coast to Coast.',
     },
     {
-      image: 'images/website.png',
+      image: 'images/movie.png',
       project: 'Movie Data',
       caption: 'Sed ut perspiciatis unde omnis iste natus error.',
     },
@@ -38,7 +38,13 @@
       image: 'images/soak.png',
       project: 'Soak Services',
       link: 'https://www.soak.services/',
-      caption: 'A onepage website for a small drainage company.',
+      caption: 'A onepage, static website for a small drainage company.',
+    },
+    {
+      image: 'images/wealden.png',
+      project: 'Wealden Green Party',
+      link: 'https://wealden.greenparty.org.uk/',
+      caption: 'A wordpress redesign for the Wealden Green Party. This used existing templates created by the Green Party.',
     }
 
   ];
@@ -52,7 +58,7 @@
     html +=
       `<div class="flex-item">             
         <figure>
-            <img src="${card.image}" alt="filler" class="flex-image">
+        <a href="${card.link}" target="_blank"><img src="${card.image}" alt="filler" class="flex-image"></a>
             <figcaption>
                 <div><a href="${card.link}" target="_blank">${card.project}</a></div>
 
@@ -83,3 +89,4 @@ document.querySelectorAll(".plus-symbol")[i].addEventListener("click", function(
   
 });
 }
+

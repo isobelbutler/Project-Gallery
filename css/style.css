@@ -2,7 +2,7 @@
 
 html {
     box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color: #EEF3F2;
   }
     
   *, *::before, *::after {
@@ -25,7 +25,7 @@ html {
 
 /* --- 2. FONTS --- */
   body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'neue_haas_grotesk_display65Md', 'Manrope', sans-serif;
   }
 
   h1, h2 {
@@ -35,7 +35,7 @@ html {
   h1 {
     font-size: 6em;
     font-weight: 400;
-    color: #1099ff;
+    color: #419900;
   }
 
   h2 {
@@ -50,15 +50,12 @@ html {
     line-height: 1.5;
   }
 
-  .bluetext {
-    color: #1099ff;
-  }
-
   a {
     text-decoration: none;
-    color: #1099ff;
+    color: #231F20;
     font-size: 16px;
   }
+
   a:hover {
     text-decoration: underline;
   }
@@ -80,11 +77,11 @@ html {
   }
 
   .nav-container {
-    border-bottom: 4px solid #1099ff;
+    border-bottom: 4px solid #098F00;
   }
 
   .footer-container {
-    border-top: 4px solid #1099ff;
+    border-top: 4px solid #098F00;
   }
 
   .nav-container li {
@@ -113,7 +110,6 @@ html {
 }
 
 .flex-item {
-  /* border: solid 2px #1099ff; */
   width: 250px;
   flex-grow: 1;
   /* flex-basis: 20%; */
@@ -127,26 +123,30 @@ html {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: 0 0;
+  border-radius: 15px;
+  border: solid 3px #fff;
+  width: 100%;
+  filter: drop-shadow(4px 4px 4px #DAEDD8);
+
+  /* opacity: 100%; */
 }
 
-.flex-item figure img {
-  border: solid 2px #1099ff;
-  width: 100%;
+.flex-item img:hover {
+  filter: opacity(50%) drop-shadow(4px 4px 4px #DAEDD8);
+
 }
+
 
 figcaption {
-  /* border-top: solid 2px #1099ff; */
   display: flex;
   align-items: center;
-}
-
-figcaption {
   padding: 20px;
 }
 
 figcaption p, .captionHide {
   font-size: 1em;
   margin: 0;
+  font-family: 'neue_haas_grotesk_display45Lt', 'Manrope', sans-serif;
 }
 
 .captionHide {
@@ -156,25 +156,20 @@ figcaption p, .captionHide {
 .plus-symbol {
   font-size: 3em;
   line-height: 0;
-  color: red;
+  color: #000;
   cursor:pointer;
   border: none;
   padding: 5px 5px; /* to increase clickable area */
   background-color: inherit;
 }
 
-.plus-symbol:active {
-  opacity: 50%;
-}
-
 figcaption div:first-child {
   flex-grow: 1;
 }
 
-.plus-icon {
-height: 2em;
-float: right;
-
+.plus-symbol:hover {
+color: #888684;
+transition: 0.3s;
 }
 
   
