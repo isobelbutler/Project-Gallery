@@ -35,7 +35,7 @@ html {
   h1 {
     font-size: 6em;
     font-weight: 400;
-    color: #419900;
+    color: #419901;
   }
 
   h2 {
@@ -52,7 +52,7 @@ html {
 
   a {
     text-decoration: none;
-    color: #231F20;
+    color: #0E2724;
     font-size: 16px;
   }
 
@@ -77,11 +77,11 @@ html {
   }
 
   .nav-container {
-    border-bottom: 4px solid #098F00;
+    border-bottom: 4px solid #419901;
   }
 
   .footer-container {
-    border-top: 4px solid #098F00;
+    border-top: 4px solid #419901;
   }
 
   .nav-container li {
@@ -156,7 +156,7 @@ figcaption p, .captionHide {
 .plus-symbol {
   font-size: 3em;
   line-height: 0;
-  color: #000;
+  color: #26665F;
   cursor:pointer;
   border: none;
   padding: 5px 5px; /* to increase clickable area */
